@@ -1,0 +1,64 @@
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background: url('images/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+}
+
+.animated-text {
+    font-size: 24px;
+    animation: moveUpDown 2s infinite alternate;
+}
+
+.animated-button {
+    padding: 15px 30px;
+    font-size: 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    animation: pulse 1.5s infinite alternate;
+}
+
+@keyframes moveUpDown {
+    0% { transform: translateY(0px); }
+    100% { transform: translateY(10px); }
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    100% { transform: scale(1.1); }
+}
+
+.answer-button {
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+    padding: 10px;
+    font-size: 18px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.answer-button:hover {
+    background-color: #45a049;
+}
+
+#feedback {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+#share-button {
+    background-color: #1DA1F2;
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}

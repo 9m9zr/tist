@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اختبار المعالج وكرت الشاشة</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="start-screen">
+        <h1 class="animated-text">💻 اكتشف نوع المعالج وكرت الشاشة في دماغك 🎮</h1>
+        <button class="animated-button" onclick="startQuiz()">ابدأ</button>
+    </div>
+
+    <div id="quiz-container" style="display: none;">
+        <h2 id="question-text"></h2>
+        <div id="options"></div>
+        <p id="feedback"></p>
+    </div>
+
+    <div id="result-screen" style="display: none;">
+        <h2 id="result-text"></h2>
+        <button id="share-button" class="animated-button">شارك النتيجة</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
